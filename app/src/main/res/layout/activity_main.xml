@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation= "vertical"
+    android:background="@drawable/activity_backgroud">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="36dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/balanca_logo"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IMC"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWrite"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qual seu peso?"
+                android:textColorHint="@color/colorWrite"
+                android:background="@drawable/formato_text"
+                android:padding="24dp"
+                android:layout_marginTop="32dp"
+                android:drawableStart="@drawable/peso"
+                android:drawablePadding="16dp"
+                android:drawableTint="@color/colorWrite"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qual sua altura?"
+                android:textColorHint="@color/colorWrite"
+                android:background="@drawable/formato_text"
+                android:padding="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:drawableStart="@drawable/altura"
+                android:drawablePadding="16dp"
+                android:drawableTint="@color/colorWrite" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calcular"
+                android:background="@drawable/formato_button"
+                android:textSize="18dp"
+                android:textColor="@color/colorWrite"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="0.0"
+                android:gravity="center"
+                android:layout_marginTop="32dp"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/formato_resultado"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peso Ideal"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorWrite"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
